@@ -47,16 +47,16 @@ export default function SignUp() {
 
   return (
     <div className='min-h-screen mt-20'>
-      <div className='flex flex-col md:flex-row p-3 max-w-3xl mx-auto md:items-center gap-5'>
+      <div className='flex flex-col md:flex-row p-3 max-w-3xl mx-auto md:items-center gap-10'>
         {/* left side */}
         <div className='flex-1'>
-        <Link to="/" className=' text-4xl  font-bold dark:text-white'>
-          <span className='px-2 py-1 bg-gradient-to-r from from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
+        <Link to="/" className=' text-4xl font-bold dark:text-white'>
+          <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
             Kandy's
           </span>
           Blog
         </Link>   
-        <p className='text-md mt-5'>
+        <p className='text-lg mt-5'>
           This is a demo project . You can sign up with your email an password 
           or with Google
         </p>
