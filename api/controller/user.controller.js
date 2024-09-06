@@ -31,6 +31,10 @@ export const updateUser = async(req,res,next)=>{
         if(!req.body.username.match(/^[a-zA-z0-9]+$/)){
             return next(errorHandler(400,'Username can only contain letters and numbers'));
         }
+        const existingUser = await User.findOne({username: req.body.username});
+        if(existingUser && existingUser._id.toString() !== req.params.userId){
+            return next(errorHandler(400,'Username is already taken'))
+        }
     }
     try{
         const updateUser = await User.findByIdAndUpdate(req.params.userId,{
