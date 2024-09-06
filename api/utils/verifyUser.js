@@ -6,8 +6,7 @@ export const verifyToken = (req,res,next)=>{
     const token = req.cookies.access_token;
     
     if(!token){
-        console.log("token not present");
-        return next(errorHandler(401,"unauthorized"));
+        return next(errorHandler(401,"Unauthorized"));
     }
     jwt.verify(token , process.env.JWT_SECRET_KEY , (err,user)=>{
         if(err){
