@@ -111,7 +111,7 @@ export default function DashPosts() {
                   </Table.Cell>
 
                   <Table.Cell>
-                    <Link className='font-medium text-gray-900 dark:text-white' to={`/post/${post.title}`}> {post.title}</Link>       
+                    <Link className='font-medium text-gray-900 dark:text-white' to={`/post/${post.slug}`}> {post.title}</Link>       
                   </Table.Cell>
 
                   <Table.Cell>
