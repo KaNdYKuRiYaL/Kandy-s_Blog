@@ -101,7 +101,7 @@ export default function CreatePost() {
                 <option value='lifestyle'> Lifestyle </option>
                 <option value='health'> Health </option>
                 <option value='fashion'> Fashion </option>
-                <option value='jobOppurtunities'> Job Oppurtunities </option>
+                <option value='job'> Jobs  </option>
 
             </Select>
         </div>    
