@@ -181,7 +181,7 @@ export default function DashPosts() {
 
               </div>
             </Modal.Body>
-          </Modal>
+      </Modal>
 
     </div>
     )
