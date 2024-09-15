@@ -19,7 +19,7 @@ mongoose
     console.log(error);
 });
 
-
+const __dirname = path.resolve();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
@@ -28,7 +28,7 @@ app.listen(3000 , ()=>{
     console.log('server is running on port 3000')
 });
 
-const __dirname = path.resolve();
+
 
 app.use('/api/user' , userRoutes);
 app.use('/api/auth' , authRoutes);
